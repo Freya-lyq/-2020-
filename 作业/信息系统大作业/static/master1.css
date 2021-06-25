@@ -1,0 +1,38 @@
+body{
+    display:flex;
+    margin: 0;
+    background-image:url(./QQ图片20210624132549.jpg);
+    font-size: x-large;
+    background-size:cover;
+}
+li{
+    float: left;
+
+}
+li{
+    list-style: none;
+    float: left;
+    border: 3px solid rgb(82, 3, 75);
+    width: 150px;
+    height:30px;
+    margin:0px 40px 1px 1px;
+    position: relative; 
+    z-index: 0
+    
+   }
+   .li{
+    border-right: none;
+    
+    
+   }
+   .li1{
+    border-radius:10px 0px 0px 10px ;
+    
+   
+   }
+   .li2{
+    border-radius:0 5px 5px 0 ;
+   }
+   
+   
+  

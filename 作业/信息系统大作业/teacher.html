@@ -1,0 +1,56 @@
+<html>
+    <head>
+    
+        <title>课程
+        </title>
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            table,
+            th,
+            td {
+                border: 1px solid black;
+                min-width: 5em;
+            }
+        </style>
+        <head>
+            <meta charset="UTF-8">
+            <link rel='stylesheet' href='master.css'>
+        </head>
+        
+    </head>
+
+    <body>
+
+        <table width="20%" style="margin-bottom:40px" >
+            <tr>
+                <th>{{ items4[0][0] }}，欢迎访问！！！</th>
+            </tr>
+        </table>
+
+        <form action="/teacher/schedule" method="post">
+            <br/>
+            学期: <input type="text" name="semester" placeholder="2020X季">
+            <input style="background:#7bebfa" type="submit" value="查询">
+        </form>
+
+        <table style="margin-bottom:10px;margin-left: -250px;margin-top: 100px;" >
+            <tr>
+                <th>课程名</th>
+                <th>课程时间</th>
+            </tr>      
+            {% for item in items4 %}
+            <tr>
+                <td>{{ item[1] }}</td>
+                <td>{{ item[2] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <form action="/login2" method="get" >
+            <input type="submit" style="background:#7bebfa;margin-top: 100px;"  value="退出">
+        </form>
+    </body>
+    
+</html>

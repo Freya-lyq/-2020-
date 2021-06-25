@@ -1,0 +1,14 @@
+body{
+    display:flex;
+    margin: 0;
+    background-image:url(./QQ图片20210624132543.jpg);
+    background-size:cover;
+}
+table{
+    text-align: center;
+    margin: 0px auto;
+    border-collapse: collapse;
+    border: 3px solid black;
+    
+    
+}

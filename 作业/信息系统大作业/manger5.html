@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel='stylesheet' href='master.css'>
+        <title>班级成绩</title>
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            table,
+            th,
+            td {
+                border: 1px solid black;
+                min-width: 5em;
+            }
+        </style>
+      
+        
+    </head>
+    
+
+    <body background="http://5b0988e595225.cdn.sohucs.com/images/20181106/3d6bf1262d6443d79825178ec945f81b.jpeg" 
+    style=" background-repeat:no-repeat ;
+    background-size:100% 100%;
+    background-attachment: fixed;">
+        
+
+        <table style="margin-bottom:10px ;" >
+            <tr>
+                <th>班级名</th>                
+                <th>学生姓名</th>
+                <th>课程</th>
+                <th>成绩</th>
+            </tr>      
+            {% for item in items9 %}
+            <tr>
+                <td>{{ item[0] }}</td>
+                <td>{{ item[1] }}</td>
+                <td>{{ item[2] }}</td>
+                <td>{{ item[3] }}</td>              
+            </tr>
+            {% endfor %}
+           
+        </table>
+        <form action="/class_pf" method="get" >
+            <input type="submit" style="background:#7bebfa" value="返回">    
+        </form>
+        
+    </body>
+</html>
